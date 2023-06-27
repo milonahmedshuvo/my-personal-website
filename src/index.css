@@ -60,11 +60,13 @@ button:focus-visible {
 }
 
 /* ata main backgroud color all  */
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #FFFFFF;
-    background-color: #252734;
-
+    background-color: #1A103C;
+   
   }
   a:hover {
     color: #747bff;

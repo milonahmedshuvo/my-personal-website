@@ -41,3 +41,13 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+
+/* custom css  */
+.shadowColor{
+  box-shadow: -26px -7px 136px -15px rgba(47,110,249,0.75);
+-webkit-box-shadow: -26px -7px 136px -15px rgba(47,110,249,0.75);
+-moz-box-shadow: -26px -7px 136px -15px rgba(47,110,249,0.75);
+}

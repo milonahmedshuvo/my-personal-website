@@ -3,15 +3,21 @@ import { Link } from 'react-router-dom'
 
 const Navber = () => {
 
+
+
  const manuItem = <>
-          <li> <Link className='text-[#858792] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
-          <li> <Link className='text-[#858792] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
-          <li> <Link className='text-[#858792] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
-          <li> <Link className='text-[#858792] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
-          <li> <Link className='text-[#858792] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
-          <li> <Link className='text-[#858792] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
+          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
+
+          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>ABOUT</Link> </li>
+
+          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>PROJECTS</Link> </li>
+
+          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'> SKILLS </Link> </li>
+
+          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>CONTACT</Link> </li>
+
+          <li> <Link to='/dashbord' className='text-[#ffffff] hover:text-[#ffffff] text-lg'>DASHBORD</Link> </li>
          
-                  
  </>
 
 
@@ -34,7 +40,7 @@ const Navber = () => {
 
 
       </div>
-      <a className="btn btn-ghost normal-case text-xl">My Website</a>
+      <a className="btn btn-ghost normal-case text-xl italic">Shuvo's Portfolio</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
@@ -51,7 +57,7 @@ const Navber = () => {
 
     <div className="navbar-end ">
 
-      <p className=" rounded-full border border-[#858792] px-12 py-3 hover:bg-[#2E303D] bg-[#252734] text-white text-lg ">Hire me</p>
+      <p className=" shadowColor  rounded-full border border-[#858792] px-12 py-3 hover:bg-[#1A103C] bg-[#1A103C] text-white text-lg ">HIRE ME</p>
     </div>
   </div>
   )
