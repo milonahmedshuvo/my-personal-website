@@ -9,7 +9,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 const queryClient = new QueryClient()
-
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
@@ -22,6 +22,7 @@ function App() {
           <RouterProvider router={router}>
            </RouterProvider>  
       </QueryClientProvider>
+      <Toaster></Toaster>
     </div>
   )
 }

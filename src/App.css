@@ -47,7 +47,19 @@
 
 /* custom css  */
 .shadowColor{
-  box-shadow: -26px -7px 136px -15px rgba(47,110,249,0.75);
--webkit-box-shadow: -26px -7px 136px -15px rgba(47,110,249,0.75);
--moz-box-shadow: -26px -7px 136px -15px rgba(47,110,249,0.75);
+  box-shadow: -116px -5px 205px 18px rgba(196,40,219,0.29);
+-webkit-box-shadow: -116px -5px 205px 18px rgba(196,40,219,0.29);
+-moz-box-shadow: -116px -5px 205px 18px rgba(196,40,219,0.29);
+}
+
+
+.textShadow{
+  box-shadow: -116px -5px 205px 1px rgba(196,40,219,0.17);
+-webkit-box-shadow: -116px -5px 205px 1px rgba(196,40,219,0.17);
+-moz-box-shadow: -116px -5px 205px 1px rgba(196,40,219,0.17);
+}
+
+
+.textShadowOrinal{
+  text-shadow: 8px -20px 24px rgba(196,40,219,0.25);
 }

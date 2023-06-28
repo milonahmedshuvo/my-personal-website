@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-hot-toast'
 import { json } from 'react-router-dom'
 
 const MakeProjects = () => {
@@ -39,11 +40,16 @@ const MakeProjects = () => {
            .then((res)=> res.json())
            .then((data)=> {
             console.log(data)
+            toast.success("Succesful Add Project !")
            })
            .catch((err) => {
             console.log(err)
+            toast.error("not add project !")
            })
      }
+
+
+
 
   return (
     <div className='my-40 ml-6'>

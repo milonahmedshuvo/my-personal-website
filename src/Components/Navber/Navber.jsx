@@ -8,12 +8,11 @@ const Navber = () => {
  const manuItem = <>
           <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>HOME</Link> </li>
 
-          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>ABOUT</Link> </li>
+          <li> <Link to='/about' className='text-[#ffffff] hover:text-[#ffffff] text-lg'>ABOUT</Link> </li>
 
           <li> <Link to="/projects" className='text-[#ffffff] hover:text-[#ffffff] text-lg'>PROJECTS</Link> </li>
 
-          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'> SKILLS </Link> </li>
-
+         
           <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>CONTACT</Link> </li>
 
           <li> <Link to='/dashbord' className='text-[#ffffff] hover:text-[#ffffff] text-lg'>DASHBORD</Link> </li>
@@ -40,7 +39,7 @@ const Navber = () => {
 
 
       </div>
-      <a className="btn btn-ghost normal-case text-xl italic">Shuvo's Portfolio</a>
+      <a className="btn btn-ghost normal-case text-xl italic shadowColor ">Shuvo's Portfolio</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">

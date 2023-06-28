@@ -4,6 +4,8 @@ import Home from "./Components/Home/Home";
 import DashbordLayout from "./Components/DashbordLayout/DashbordLayout";
 import MakeProjects from "./Components/DashbordLayout/MakeProjects/MakeProjects";
 import Projects from "./Components/RouteComponents/Projects/Projects";
+import DahsbordAllProjects from "./Components/RouteComponents/DashbordAllProjects/DahsbordAllProjects";
+import About from "./Components/About/About";
  
 export const router = createBrowserRouter([
     {
@@ -19,12 +21,20 @@ export const router = createBrowserRouter([
                 element: <Projects></Projects>
             },
             {
+                path: "/about",
+                element: <About></About>
+            },
+            {
                 path: '/dashbord',
                 element: <DashbordLayout></DashbordLayout>,
                 children: [
                     {
                         path: "/dashbord/p",
                         element: <MakeProjects> </MakeProjects>
+                    },
+                    {
+                        path: "/dashbord/allProjects",
+                        element: <DahsbordAllProjects></DahsbordAllProjects>
                     }
                 ]
             }

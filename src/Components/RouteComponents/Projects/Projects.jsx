@@ -23,7 +23,7 @@ const Projects = () => {
        <h1 className='text-3xl text-center font-bold '>MY PROJECTS</h1>
     </div>
 
-        <div className='flex justify-between gap-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
              {
                   projects.map((project, i) => <RouteSingle
                               key={i}

@@ -9,7 +9,7 @@ const SingleProjects = ({project}) => {
 
 
   return (
-    <div className='px-3 py-2 bg-[#3A2B71] rounded '>
+    <div className='px-3 py-2 bg-[#3A2B71] rounded textShadow '>
 
 
        <div>

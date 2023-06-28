@@ -23,7 +23,7 @@ const Projects = () => {
               <h1 className='text-3xl text-center font-bold '>MY PROJECTS</h1>
            </div>
 
-         <div className='flex justify-between gap-10'>
+         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 '>
          {
             allProjects.map((project, i) => <SingleProjects
             key={i}
@@ -35,7 +35,7 @@ const Projects = () => {
 
 
 
-         <div className='flex justify-center'>
+         <div className='flex justify-center '>
          <Link to='/projects'>
              <button className='text-xl bg-blue-400 text-white rounded px-2 py-1 my-12 text-center uppercase ' type="button">See All Projects</button>
          </Link>
