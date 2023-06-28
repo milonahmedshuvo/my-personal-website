@@ -10,7 +10,7 @@ const Navber = () => {
 
           <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>ABOUT</Link> </li>
 
-          <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>PROJECTS</Link> </li>
+          <li> <Link to="/projects" className='text-[#ffffff] hover:text-[#ffffff] text-lg'>PROJECTS</Link> </li>
 
           <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'> SKILLS </Link> </li>
 
