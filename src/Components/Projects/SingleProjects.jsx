@@ -33,11 +33,11 @@ const SingleProjects = ({project}) => {
 
 
            <div className='mt-10 mb-3 flex justify-between  '>
-              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink}>Client Code</a>
+              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink} target="_blank" >Client Code</a>
 
-              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink}>Server Code</a>
+              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink} target="_blank" >Server Code</a>
 
-              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink}>Live Site</a>
+              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink} target="_blank" >Live Site</a>
 
            </div>
           
