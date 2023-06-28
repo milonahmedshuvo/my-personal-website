@@ -6,6 +6,7 @@ import MakeProjects from "./Components/DashbordLayout/MakeProjects/MakeProjects"
 import Projects from "./Components/RouteComponents/Projects/Projects";
 import DahsbordAllProjects from "./Components/RouteComponents/DashbordAllProjects/DahsbordAllProjects";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
  
 export const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About></About>
+            },
+            {   
+                path: "/contact",
+                element: <Contact></Contact>
             },
             {
                 path: '/dashbord',
