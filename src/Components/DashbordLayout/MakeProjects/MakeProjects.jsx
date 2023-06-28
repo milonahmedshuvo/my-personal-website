@@ -1,4 +1,5 @@
 import React from 'react'
+import { json } from 'react-router-dom'
 
 const MakeProjects = () => {
 
@@ -17,6 +18,31 @@ const MakeProjects = () => {
          console.log(categori,title, technology, image, clientLink, serverLink, liveLink, drescription)
 
 
+        const makeprojectData = {
+            categori,
+            title,
+            technology,
+            image,
+            clientLink,
+            serverLink,
+            liveLink, 
+            drescription
+        }
+
+           fetch('http://localhost:5000/makeProject', {
+            method: "POST",
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body:JSON.stringify(makeprojectData) 
+           })
+           .then((res)=> res.json())
+           .then((data)=> {
+            console.log(data)
+           })
+           .catch((err) => {
+            console.log(err)
+           })
      }
 
   return (

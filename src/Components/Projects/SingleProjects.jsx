@@ -9,7 +9,7 @@ const SingleProjects = ({project}) => {
 
 
   return (
-    <div className=' px-7 py-3 bg-[#3A2B71] '>
+    <div className='px-3 py-2 bg-[#3A2B71] rounded '>
 
 
        <div>
@@ -24,7 +24,7 @@ const SingleProjects = ({project}) => {
            
            <div className='mt-5'>
                {
-                technology.map((el, i) => <span className='border border-blue-300 px-2 mx-1 rounded-lg'
+                technology?.split(" ").map((el, i) => <span className='border border-blue-300 px-2 mx-1 rounded-lg'
                 key={i}
                 >{el} </span>)
                }

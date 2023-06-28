@@ -16,7 +16,7 @@ const queryClient = new QueryClient()
 function App() {
  
   return (
-    <div className='p-full md:px-36'>
+    <div className='p-full md:px-24'>
        
       <QueryClientProvider client={queryClient}>
           <RouterProvider router={router}>

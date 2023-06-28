@@ -6,7 +6,7 @@ const Projects = () => {
      const {data:allProjects=[], isLoading, refetch }=useQuery({
         queryKey:["projects"],
         queryFn: async ( ) => {
-            const res = await fetch('http://localhost:5000/allProjects');
+            const res = await fetch('http://localhost:5000/limitProjects');
             const data = await res.json()
             return data
         }
