@@ -9,7 +9,6 @@ const MakeProjects = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
 
-
      const handleMakeProject = (data) => {
         // event.preventDefault()
         // event.preventDefault()
@@ -107,6 +106,8 @@ const MakeProjects = () => {
 
 
 
+
+        
 
      }
 
