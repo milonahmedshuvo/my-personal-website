@@ -1,8 +1,20 @@
-import React from "react";
+import React, { createContext } from "react";
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { createContextUser } from "./ContextComponents";
+import { toast } from "react-hot-toast";
+
+
+
+
+
 
 const SingUp = () => {
+      const {user, createUSer} = useContext(createContextUser)
+
+
+
   const {
     register,
     handleSubmit,
@@ -10,9 +22,27 @@ const SingUp = () => {
     formState: { errors },
   } = useForm();
 
+
+
+
   const handleSingUp = (data) => {
-    console.log(data.email, data.password);
+    
+
+    createUSer(data.email, data.password)
+    .then((data)=>{
+        console.log(data)
+        toast.success("Succesful!")
+    })
+    .catch((err)=>{
+        console.log(err)
+        toast.error("Singup filed!")
+    })
   };
+
+
+
+
+
 
   return (
     <div>
