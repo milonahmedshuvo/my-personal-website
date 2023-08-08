@@ -1,51 +1,104 @@
 import React from 'react'
+import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast'
 import { json } from 'react-router-dom'
 
+
+
 const MakeProjects = () => {
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
-     const handleMakeProject = (event) => {
+
+
+     const handleMakeProject = (data) => {
         // event.preventDefault()
-        event.preventDefault()
-         const categori = event.target.categori.value
-         const title = event.target.title.value 
-         const technology = event.target.technology.value
-         const image = event.target.image.value 
-         const clientLink= event.target.clientLink.value
-         const serverLink= event.target.serverLink.value 
-         const liveLink  = event.target.liveLink.value 
-         const drescription = event.target.drescription.value 
+        // event.preventDefault()
+        //  const categori = event.target.categori.value
+        //  const title = event.target.title.value 
+        //  const technology = event.target.technology.value
+        //  const image = event.target.image 
+        //  const clientLink= event.target.clientLink.value
+        //  const serverLink= event.target.serverLink.value 
+        //  const liveLink  = event.target.liveLink.value 
+        //  const drescription = event.target.drescription.value 
 
-         console.log(categori,title, technology, image, clientLink, serverLink, liveLink, drescription)
+         console.log(data.image[0])
+         const image = data.image[0]
+         const formData= new FormData()
+         formData.append("image",image)
+         console.log("formData", formData)
+
+            fetch("https://api.imgbb.com/1/upload?&key=fb70d1eaaaaf3643c06f16d2e654b7a0", {
+                method:"POST",
+                body: formData
+            })
+            .then((res) => res.json())
+            .then((imageData) => {                
+                if(imageData.success){
+                    const image = imageData.data.url
 
 
-        const makeprojectData = {
-            categori,
-            title,
-            technology,
-            image,
-            clientLink,
-            serverLink,
-            liveLink, 
-            drescription
-        }
+                    const projectData = {
+                        image,
 
-           fetch('http://localhost:5000/makeProject', {
-            method: "POST",
-            headers: {
-                'Content-type': 'application/json'
-            },
-            body:JSON.stringify(makeprojectData) 
-           })
-           .then((res)=> res.json())
-           .then((data)=> {
-            console.log(data)
-            toast.success("Succesful Add Project !")
-           })
-           .catch((err) => {
-            console.log(err)
-            toast.error("not add project !")
-           })
+                    }
+                }
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // const makeprojectData = {
+        //     categori,
+        //     title,
+        //     technology,
+        //     image,
+        //     clientLink,
+        //     serverLink,
+        //     liveLink, 
+        //     drescription
+        // }
+
+        //    fetch('http://localhost:5000/makeProject', {
+        //     method: "POST",
+        //     headers: {
+        //         'Content-type': 'application/json'
+        //     },
+        //     body:JSON.stringify(makeprojectData) 
+        //    })
+        //    .then((res)=> res.json())
+        //    .then((data)=> {
+        //     console.log(data)
+        //     toast.success("Succesful Add Project !")
+        //    })
+        //    .catch((err) => {
+        //     console.log(err)
+        //     toast.error("not add project !")
+        //    })
+
+
+
+
      }
 
 
@@ -57,29 +110,36 @@ const MakeProjects = () => {
 
 
            <div>
-               <form onSubmit={handleMakeProject}>
-               <input type="text" placeholder="categori/backend/fortend name" name="categori" className="input input-bordered input-primary w-full my-2" />
+               <form onSubmit={handleSubmit(handleMakeProject)}>
+
+                
+               <input type="text" placeholder="categori/backend/fortend name" className="input input-bordered input-primary w-full my-2" {...register("categori")} />
 
 
-               <input type="text" placeholder="title/project name" name="title" className="input input-bordered input-primary w-full my-2" />
+               <input type="text" placeholder="title/project name" className="input input-bordered input-primary w-full my-2" {...register("title")} />
 
 
-               <input type="text" placeholder="technology" name="technology" className="input input-bordered input-primary w-full my-2" />
+               <input type="text" placeholder="technology" className="input input-bordered input-primary w-full my-2" {...register("technology")} />
 
 
 
-               <input type="text" placeholder="image url"  name="image" className="input input-bordered input-primary w-full my-2" />
+               {/* <input type="text" placeholder="image url"   className="input input-bordered input-primary w-full my-2" /> */}
+
+               <input type="file" className="file-input file-input-bordered w-full my-2" {...register("image")} />
 
 
-               <input type="text" placeholder="clientLink" name="clientLink" className="input input-bordered input-primary w-full my-2" />
 
 
-               <input type="text" placeholder="serverLink" name="serverLink" className="input input-bordered input-primary w-full my-2" />
-
-               <input type="text" placeholder="liveLink" name="liveLink" className="input input-bordered input-primary w-full my-2" />
+               <input type="text" placeholder="clientLink" className="input input-bordered input-primary w-full my-2" {...register("clientLink")} />
 
 
-               <input type="text" placeholder="drescription" name="drescription" className="input input-bordered input-primary w-full my-2" />
+               <input type="text" placeholder="serverLink" className="input input-bordered input-primary w-full my-2" {...register("serverLink")} />
+
+
+               <input type="text" placeholder="liveLink" className="input input-bordered input-primary w-full my-2" {...register("liveLink")} />
+
+
+               <input type="text" placeholder="drescription" className="input input-bordered input-primary w-full my-2" {...register("drescription")} />
 
                       
 

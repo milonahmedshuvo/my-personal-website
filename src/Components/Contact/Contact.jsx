@@ -11,12 +11,15 @@ const Contact = () => {
 
     const sendEmail = (e) => {
       e.preventDefault();
+
+      
   
       emailjs.sendForm('service_vz8owgi', 'template_36cy8br', form.current, '4Mxt1xBz1j31xy1fB')
         .then((result) => {
             console.log(result.text);
             console.log("message seen")
             toast.success("Your message successful send...")
+            e.target.reset()
         }, (error) => {
             console.log(error.text);
             toast.error("Sorry..try again..!")
