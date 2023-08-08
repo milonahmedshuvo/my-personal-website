@@ -40,6 +40,12 @@ const MakeProjects = () => {
 
                     const projectData = {
                         image,
+                        categori: data.categori,
+                        title: data.title,
+                        technology: data.technology,
+                        clientLink: data.clientLink,
+                        serverLinkJ: data.serverLink,
+                        
 
                     }
                 }
