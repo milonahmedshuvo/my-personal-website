@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
-
+import contact from '../../images/contact.jpg'
 
 
 
@@ -35,7 +35,8 @@ const Contact = () => {
     <div className='grid grid-cols-1 md:grid-cols-2 gap-10 my-32'>
         
         <div>
-            <img src="https://scorion.nl/cms/wp-content/uploads/2022/02/contact-scaled-1.jpg " className='rounded-3xl ' alt="" />
+        {/* https://scorion.nl/cms/wp-content/uploads/2022/02/contact-scaled-1.jpg  */}
+            <img src={contact} className='rounded-3xl ' alt="" />
         </div>
 
 
