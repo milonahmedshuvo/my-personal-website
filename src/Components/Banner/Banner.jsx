@@ -1,5 +1,8 @@
 import React from 'react'
 import my from '../../images/mypic.jpg'
+import { FaGithub,FaLinkedin,FaFacebook } from "react-icons/fa";
+
+
 
 const Banner = () => {
 
@@ -12,10 +15,12 @@ const Banner = () => {
 
                  <div className=' w-full flex flex-col justify-center'>
                     <h1 className='text-7xl font-bold '>Milon Ahmed <span>Shuvo</span></h1>
-                    <h4 className='mt-5 text-3xl '>MERN Stack Junior Web Developer</h4>
+                    <h4 className='mt-5 text-3xl '>Junior MERN Stack Web Developer</h4>
 
 
-                    <button className="group mt-4 textShadow relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg font-bold shadow px-1">
+                   <div className='flex items-center'>
+
+                   <button className="group mt-4 textShadow relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg font-bold shadow px-1">
                         <a
                             href="https://drive.google.com/file/d/1rGCGsM41DgZCwY2Z-GChdvue6Xky9Ckm/view?usp=sharing"
                             target="_blank"
@@ -27,6 +32,17 @@ const Banner = () => {
                             </span>
                         </a>
                     </button>
+
+
+                    <div className='flex '>
+                    <a className='ml-3' target="_blank" href="https://www.linkedin.com/in/milon-ahmed-shuvo/"> <FaLinkedin className="text-2xl"></FaLinkedin> </a>
+                 <a className='ml-2' target="_blank" href="https://github.com/milonahmedshuvo"> <FaGithub className="text-2xl "></FaGithub> </a>
+                    </div>
+                   </div>
+
+
+
+                    
                  </div>
 
 

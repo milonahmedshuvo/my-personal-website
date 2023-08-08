@@ -47,6 +47,7 @@ const MakeProjects = () => {
                     }
 
                     console.log(projectData)
+                    seveProjectData(projectData)
                     toast.success("succful image host")
                 }
             })
@@ -60,47 +61,32 @@ const MakeProjects = () => {
 
 
 
+        function seveProjectData (project){
+            fetch('http://localhost:5000/makeProject', {
+                method: "POST",
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body:JSON.stringify(project) 
+               })
+               .then((res)=> res.json())
+               .then((data)=> {
+                console.log(data)
+                toast.success("Succesful Add Project !")
+               })
+               .catch((err) => {
+                console.log(err)
+                toast.error("not add project !")
+               })
+
+        } 
 
 
 
 
+        
 
-
-
-
-
-
-
-
-
-
-        // const makeprojectData = {
-        //     categori,
-        //     title,
-        //     technology,
-        //     image,
-        //     clientLink,
-        //     serverLink,
-        //     liveLink, 
-        //     drescription
-        // }
-
-        //    fetch('http://localhost:5000/makeProject', {
-        //     method: "POST",
-        //     headers: {
-        //         'Content-type': 'application/json'
-        //     },
-        //     body:JSON.stringify(makeprojectData) 
-        //    })
-        //    .then((res)=> res.json())
-        //    .then((data)=> {
-        //     console.log(data)
-        //     toast.success("Succesful Add Project !")
-        //    })
-        //    .catch((err) => {
-        //     console.log(err)
-        //     toast.error("not add project !")
-        //    })
+           
 
 
 

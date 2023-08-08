@@ -23,9 +23,34 @@ const RouteSingle = ({project}) => {
      </div>
        
 
-        <div className='w-full '>
-         <img className=' mx-auto' src={image} alt="" />
-        </div>
+         {/* <div className='w-full '>
+         
+           <img className=' mx-auto' src={image} alt="" />
+        </div>  */}
+
+
+
+        <div className="w-full h-52 mt-5 overflow-hidden hover:overflow-hidden rounded-lg bg-white"> 
+           
+           <div className="w-full h-full bg-cover bg-no-repeat bg-animation" style={{backgroundImage: `url(${image})`, }} ></div>   
+
+
+          </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         <div className='mt-5'>
             {
