@@ -36,7 +36,6 @@ const DashbordLayout = () => {
       <li> <Link to='/dashbord/allProjects' className='text-[#ffffff] hover:text-[#ffffff] text-lg'>All Project</Link> </li>
 
 
-      <li> <Link className='text-[#ffffff] hover:text-[#ffffff] text-lg'>Make Project</Link> </li>
     </ul>
   
   </div>
