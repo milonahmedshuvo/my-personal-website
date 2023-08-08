@@ -113,7 +113,7 @@ const MakeProjects = () => {
 
 
   return (
-    <div className='my-40 ml-6'>
+    <div className='my-10 ml-6'>
        <h1 className='text-center text-3xl font-bold my-4 text-purple-500 '>Make projects </h1>
 
 
