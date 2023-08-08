@@ -35,8 +35,6 @@ const MakeProjects = () => {
             .then((imageData) => {                
                 if(imageData.success){
                     const image = imageData.data.url
-
-
                     const projectData = {
                         image,
                         categori: data.categori,
@@ -107,7 +105,7 @@ const MakeProjects = () => {
 
 
 
-        
+
 
      }
 
