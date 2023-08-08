@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaGithub,FaLinkedin,FaFacebook } from "react-icons/fa";
 import dev from '../../images/developer.png'
+import { createContextUser } from "../../Layout/ContextComponents";
+import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 
 
 const Footer = () => {
+     const {user,logout} = useContext(createContextUser)
+
+        const userLogout = () =>{
+            logout()
+            .then((data)=>{
+              toast.success("logout success!")
+            })
+            .catch((err)=>{
+              console.log(err)
+              toast.error("logout filed")
+            })
+        }
+
+
+
   return (
    <div className="my-20">
      <footer className="footer  text-neutral-content">
@@ -15,6 +33,13 @@ const Footer = () => {
           <br />
           Providing Web Devepment Service.
         </p>
+
+         {
+          user?.email? <Link onClick={userLogout} >logout</Link>  :  <Link to='/login'>login</Link>
+         }  
+
+
+
       </div>
       <div>
         <span className="text-white text-xl">Social</span>
