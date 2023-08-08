@@ -7,6 +7,8 @@ import Projects from "./Components/RouteComponents/Projects/Projects";
 import DahsbordAllProjects from "./Components/RouteComponents/DashbordAllProjects/DahsbordAllProjects";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
+import Login from "./Layout/Login";
+import SingUp from "./Layout/SingUp";
  
 export const router = createBrowserRouter([
     {
@@ -29,6 +31,13 @@ export const router = createBrowserRouter([
                 path: "/contact",
                 element: <Contact></Contact>
             },
+            {   path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path:"/singup",
+                element: <SingUp></SingUp>
+            }, 
             {
                 path: '/dashbord',
                 element: <DashbordLayout></DashbordLayout>,

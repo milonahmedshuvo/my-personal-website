@@ -139,7 +139,7 @@ const MakeProjects = () => {
 
 
 
-                      <input type="submit" value="Submit" className='bg-purple-500 px-4 py-1 mt-7 rounded  text-white w-1/2 mx-auto '  />
+                      <input type="submit" value="Submit" className='bg-purple-500 px-4 py-1 mt-7 rounded  text-white w-1/2 mx-auto '/>
                </form>
            </div>
     </div>
