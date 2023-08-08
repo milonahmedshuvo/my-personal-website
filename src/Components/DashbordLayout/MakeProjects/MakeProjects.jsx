@@ -45,9 +45,11 @@ const MakeProjects = () => {
                         technology: data.technology,
                         clientLink: data.clientLink,
                         serverLinkJ: data.serverLink,
-                        
-
+                        liveLink: data.liveLink,
+                        drescription:data.drescription
                     }
+
+                    console.log(projectData)
                 }
             })
             .catch((err) => {
