@@ -50,6 +50,7 @@ const MakeProjects = () => {
                     }
 
                     console.log(projectData)
+                    toast.success("succful image host")
                 }
             })
             .catch((err) => {
