@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { createContextUser } from "./ContextComponents";
+import { toast } from "react-hot-toast";
 
 const Login = () => {
+      const {userLogin} = useContext(createContextUser)
+      const navigete = useNavigate()
+
   const {
     register,
     handleSubmit,
@@ -13,6 +18,16 @@ const Login = () => {
 
   const handleLogin = (data) => {
     console.log(data.email, data.password);
+    userLogin(data.email, data.password)
+    .then((data)=> {
+        console.log(data)
+        toast.success("login succes")
+        navigete("/")
+    })
+    .catch((err)=> {
+        console.log(err)
+        toast.error("login filed")
+    })
   };
 
   return (
