@@ -13,8 +13,8 @@ const SingleProjects = ({project}) => {
 
 
        <div>
-           <h1 className='text-3xl text-center font-bold'>{title}</h1>
-            <p className='text-2xl text-center my-4'>{categori}</p>
+           <h1 className='text-2xl text-center font-bold'>{title}</h1>
+            <p className='text-xl text-center my-4'>{categori}</p>
         </div>
           
 
@@ -49,9 +49,9 @@ const SingleProjects = ({project}) => {
            <div className='mt-10 mb-3 flex justify-between  '>
               <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink} target="_blank" >Client Code</a>
 
-              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink} target="_blank" >Server Code</a>
+              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={serverLink} target="_blank" >Server Code</a>
 
-              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={clientLink} target="_blank" >Live Site</a>
+              <a className='bg-blue-400 px-3 py-1 text-center text-white rounded-sm' href={liveLink} target="_blank" >Live Site</a>
 
            </div>
           

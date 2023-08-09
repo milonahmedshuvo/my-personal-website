@@ -41,7 +41,7 @@ const MakeProjects = () => {
                         title: data.title,
                         technology: data.technology,
                         clientLink: data.clientLink,
-                        serverLinkJ: data.serverLink,
+                        serverLink: data.serverLink,
                         liveLink: data.liveLink,
                         drescription:data.drescription
                     }

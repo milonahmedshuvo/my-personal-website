@@ -15,8 +15,8 @@ const RouteSingle = ({ project }) => {
   return (
     <div className="px-3 py-2 bg-[#3A2B71] rounded ">
       <div>
-        <h1 className="text-3xl text-center font-bold">{title}</h1>
-        <p className="text-2xl text-center my-4">{categori}</p>
+        <h1 className="text-2xl text-center font-bold">{title}</h1>
+        <p className="text-xl text-center my-4">{categori}</p>
       </div>
 
 
@@ -69,7 +69,7 @@ const RouteSingle = ({ project }) => {
         <a
           className="bg-blue-400 px-3 py-1 text-center text-white rounded-sm"
           target="_blank"
-          href={clientLink}
+          href={serverLink}
         >
           Server Code
         </a>
@@ -77,7 +77,7 @@ const RouteSingle = ({ project }) => {
         <a
           className="bg-blue-400 px-3 py-1 text-center text-white rounded-sm"
           target="_blank"
-          href={clientLink}
+          href={liveLink}
         >
           Live Site
         </a>
