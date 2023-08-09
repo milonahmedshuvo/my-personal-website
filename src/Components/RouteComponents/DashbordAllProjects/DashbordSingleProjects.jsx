@@ -39,9 +39,6 @@ const DashbordSingleProjects = ({ project, refetch }) => {
         <p className="text-2xl text-center my-4">{categori}</p>
       </div>
 
-      {/* <div className='w-full '>
-         <img className=' mx-auto' src={image} alt="" />
-        </div> */}
 
       <div className="w-full h-52 overflow-hidden  relative">
         <img
