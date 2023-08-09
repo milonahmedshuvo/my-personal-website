@@ -49,7 +49,7 @@ const SingUp = () => {
 
 
 const seveUserInfo = (info) => {
-   fetch("http://localhost:5000/userInfo",{
+   fetch("https://my-personal-website-flax-beta.vercel.app/userInfo",{
     method:"POST",
     headers:{
       "content-type":"application/json"

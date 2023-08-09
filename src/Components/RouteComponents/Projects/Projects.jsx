@@ -8,7 +8,7 @@ const Projects = () => {
      const {data:projects=[], } = useQuery({
         queryKey: ['projects'],
         queryFn: async ( ) => {
-               const res = await fetch("http://localhost:5000/allProjects");
+               const res = await fetch("https://my-personal-website-flax-beta.vercel.app/allProjects");
                const data = await res.json()
                return data
         }

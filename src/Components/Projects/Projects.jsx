@@ -7,7 +7,7 @@ const Projects = () => {
      const {data:allProjects=[], isLoading, refetch }=useQuery({
         queryKey:["projects"],
         queryFn: async ( ) => {
-            const res = await fetch('http://localhost:5000/limitProjects');
+            const res = await fetch('https://my-personal-website-flax-beta.vercel.app/limitProjects');
             const data = await res.json()
             return data
         }

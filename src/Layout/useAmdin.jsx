@@ -5,7 +5,7 @@ const useAmdin = (email) => {
 
     if(email){
         useEffect(() => {
-            fetch(`http://localhost:5000/checkAdmin?email=${email}`)
+            fetch(`https://my-personal-website-flax-beta.vercel.app/checkAdmin?email=${email}`)
             .then((res) => res.json())
             .then((data)=>{
                 setIsadmin(data.isAdmin)

@@ -11,7 +11,7 @@ const Banner = () => {
     <div className='mt-10'>
       
 
-      <div className='flex justify-between '>
+      <div className='flex flex-col md:flex-row md:justify-between '>
 
                  <div className=' w-full flex flex-col justify-center'>
                     <h1 className='text-7xl font-bold '>Milon Ahmed <span>Shuvo</span></h1>
@@ -47,7 +47,7 @@ const Banner = () => {
 
 
 
-                 <div className=' w-full '>
+                 <div className=' w-full mt-20 md:mt-0 '>
                    <img className='w-2/3 mx-auto rounded-full shadowColor' src={my} alt="" />
                  </div>
       </div>

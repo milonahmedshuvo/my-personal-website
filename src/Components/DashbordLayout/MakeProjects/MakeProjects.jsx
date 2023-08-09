@@ -62,7 +62,7 @@ const MakeProjects = () => {
 
 
         function seveProjectData (project){
-            fetch('http://localhost:5000/makeProject', {
+            fetch('https://my-personal-website-flax-beta.vercel.app/makeProject', {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json'

@@ -17,7 +17,7 @@ const DashbordSingleProjects = ({ project, refetch }) => {
   const handleProjectId = (id) => {
     console.log(id);
 
-    fetch(`http://localhost:5000/project?id=${id}`, {
+    fetch(`https://my-personal-website-flax-beta.vercel.app/project?id=${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

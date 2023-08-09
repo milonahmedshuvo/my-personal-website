@@ -25,10 +25,10 @@ const Footer = () => {
 
   return (
    <div className="my-20">
-     <footer className="footer  text-neutral-content">
-      <div>
+     <footer className="footer  text-neutral-content ">
+      <div className="ml-10">
         
-        <p>
+        <p className="">
           <span className="text-lg">Milon Ahmed Shuvo.</span>
           <br />
           Providing Web Devepment Service.
@@ -41,9 +41,9 @@ const Footer = () => {
 
 
       </div>
-      <div>
+      <div className="ml-10">
         <span className="text-white text-xl">Social</span>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid grid-flow-col  gap-4">
          
             
                  <a  target="_blank" href="https://www.facebook.com/milon.ahmedshuvo.5/"> <FaFacebook className="text-2xl"></FaFacebook> </a>
@@ -59,7 +59,7 @@ const Footer = () => {
 
 
 
-    <h1 className="text-center text-white mt-20">Copyright © 2023 - All right reserved by Milon Ahmed Shuvo</h1>
+    <h1 className="text-center text-sm md:text-lg text-white mt-20">Copyright © 2023 - All right reserved by Milon Ahmed Shuvo</h1>
    </div>
 
   );
