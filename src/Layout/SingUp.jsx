@@ -32,12 +32,36 @@ const SingUp = () => {
     .then((data)=>{
         console.log(data)
         toast.success("Succesful!")
+        const datas = {
+          email: data.user.email,
+          role : "viewer"
+        }
+        seveUserInfo(datas)
     })
     .catch((err)=>{
         console.log(err)
         toast.error("Singup filed!")
     })
   };
+
+
+
+
+
+const seveUserInfo = (info) => {
+   fetch("http://localhost:5000/userInfo",{
+    method:"POST",
+    headers:{
+      "content-type":"application/json"
+    },
+    body: JSON.stringify(info)
+   }) 
+   .then((res)=> res.json())
+   .then((data)=>{
+    console.log(data)
+   })
+   .catch((err)=>console.log(err))   
+}
 
 
 

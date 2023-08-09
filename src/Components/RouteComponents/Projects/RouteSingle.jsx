@@ -22,13 +22,21 @@ const RouteSingle = ({ project }) => {
 
 
 
-      <div class="w-full h-52 overflow-hidden relative">
+      <div className="w-full h-52 overflow-hidden  relative">
         <img
           src={image}
           alt="Hover Image"
-          class="w-full h-auto transform transition-transform duration-1000 ease-linear hover:-translate-y-1/2"
+          className="w-full h-auto transform transition-transform duration-1000 ease-linear hover:-translate-y-1/2"
         />
       </div>
+
+
+
+      {/* <div className="w-300 h-14 overflow-hidden relative">
+  <img src={image} alt="Hover Image" className="w-full h-auto transform transition-transform duration-500 ease hover:-translate-y-1/2"/>
+</div> */}
+
+
 
 
 

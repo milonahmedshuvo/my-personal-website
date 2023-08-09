@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { createContextUser } from '../../Layout/ContextComponents'
+import useAmdin from '../../Layout/useAmdin'
 
 const Navber = () => {
+      const {user,loading} = useContext(createContextUser)
 
+      if(loading){
+        return <h1>loading...</h1>
+      }
+      const [isAdmin] = useAmdin(user?.email)
+      console.log("adminnnn", isAdmin)
 
 
  const manuItem = <>
@@ -15,9 +23,13 @@ const Navber = () => {
          
           <li> <Link to='/contact' className='text-[#ffffff] hover:text-[#ffffff] text-lg'>CONTACT</Link> </li>
 
-          <li> <Link to='/dashbord' className='text-[#ffffff] hover:text-[#ffffff] text-lg'>DASHBORD</Link> </li>
+          {
+            isAdmin && <li> <Link to='/dashbord' className='text-[#ffffff] hover:text-[#ffffff] text-lg'>DASHBORD</Link> </li>
+          }
          
  </>
+
+
 
 
 

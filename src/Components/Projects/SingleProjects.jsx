@@ -18,9 +18,23 @@ const SingleProjects = ({project}) => {
         </div>
           
 
-           <div className='w-full '>
-            <img className=' mx-auto' src={image} alt="" />
-           </div>
+
+
+         
+        <div className="w-full h-52 overflow-hidden  relative">
+        
+        <img
+          src={image}
+          alt="Hover Image"
+          className="w-full h-auto transform transition-transform duration-1000 ease-linear hover:-translate-y-1/2"
+        />
+      </div>
+
+
+
+
+
+
            
            <div className='mt-5'>
                {

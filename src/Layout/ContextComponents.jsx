@@ -11,11 +11,13 @@ const ContextComponents = ({children}) => {
       const [user, setUser] = useState({name: "shuvo"})
       const [loading, setLoading] = useState(true)    
 
-      const createUSer = (email,password) =>{        
+      const createUSer = (email,password) =>{ 
+        setLoading(true)       
        return createUserWithEmailAndPassword(auth, email, password)
       }
 
       const userLogin = (email, password) => {
+         setLoading(true)
          return signInWithEmailAndPassword(auth, email, password)
       }
 
@@ -32,13 +34,14 @@ const ContextComponents = ({children}) => {
       useEffect(()=>{
       const unSubcribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
+            setLoading(false)
             console.log("login user", currentUser)
         })
 
         return () => unSubcribe()
       },[])
 
-    const info ={user,createUSer,logout,userLogin}
+    const info ={user,createUSer,logout,userLogin,loading}
   return (
     <div>
        <createContextUser.Provider value={info}>
