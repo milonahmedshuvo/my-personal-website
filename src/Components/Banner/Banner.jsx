@@ -10,7 +10,6 @@ const Banner = () => {
   return (
     <div className='mt-10'>
       
-
       <div className='flex flex-col md:flex-row md:justify-between '>
 
                  <div className=' w-full flex flex-col justify-center'>
