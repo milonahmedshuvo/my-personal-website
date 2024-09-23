@@ -1,10 +1,10 @@
-import React from 'react'
 import Banner from '../Banner/Banner'
 import Projects from '../Projects/Projects'
-import Skills from '../Skills/Skills'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
-import Footer from '../Footer/Footer'
+import SkillsCarousel from '../Modarnskills/Modarnskills'
+
+
 
 const Home = () => {
 
@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <About></About>
-      <Skills></Skills>
+      <SkillsCarousel/>
       <Projects></Projects>
       <Contact></Contact>
     </div>

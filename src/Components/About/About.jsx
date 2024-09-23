@@ -1,11 +1,10 @@
-import React from 'react'
 import img from '../../images/mypic.jpg'
 
 
 const About = () => {
 
   return (
-    <div className=' my-32'>
+    <div className='my-60'>
 
           <div>
             <h1 className='font-bold text-4xl text-center uppercase mt-10 mb-4'>Who am i ...?</h1>
