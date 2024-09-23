@@ -9,11 +9,13 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Login from "./Layout/Login";
 import SingUp from "./Layout/SingUp";
+import ErrorPage from "./Layout/ErrorPage";
  
 export const router = createBrowserRouter([
     {
         path:'/',
         element: <Layout></Layout>,
+        errorElement: <ErrorPage/>,
         children: [
             {
                 path: '/',
