@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import img from '../../images/mypic.jpg'
 
 
@@ -7,8 +8,8 @@ const About = () => {
     <div className='my-60'>
 
           <div>
-            <h1 className='font-bold text-4xl text-center uppercase mt-10 mb-4'>Who am i ...?</h1>
-            <h4 className='text-center font-bold text-2xl  mt-3 mb-20'>A Passionate Developer Who Loves to Code</h4>
+            <h1 className='font-bold text-4xl text-center uppercase mt-10 mb-4 '>Who am i ...?</h1>
+            <h4 className='text-center font-bold text-2xl uppercase  mt-3 mb-20'>A Passionate Frontend Web Developer</h4>
           </div>
 
 <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
@@ -19,11 +20,20 @@ const About = () => {
 </div>  
 
 
-<div className=' p-4'>
-    <h1 className='text-3xl font-bold text-center mb-10'>About Me</h1>
-    <p className='tracking-wide leading-relaxed '>I am an enthusiastic and self-motivated full-stack web developer with excellent knowledge and experience. I have already developed more than 15 projects using HTML5, CSS3, Bootstrap, TailwindCSS, JavaScript, and ReactJs. I have also knowledge with working experience in full-stack development using Nodejs, Expressjs, MongoDB, Firebase, and netlify. I can take on challenges in a new environment to develop new skills. I can take the level of accuracy concerning the quality of the work with attention to detail. I want to build my career on this job because I love this job</p>
+<div className='px-4'>
+    <h1 className='text-3xl font-bold text-center mb-2'>About Me</h1>
+    <p className='tracking-wide leading-relaxed '>
+    Hi, I'm Milon Ahmed Shuvo, a passionate and detail-oriented Frontend Developer with expertise in building dynamic and responsive web applications. I specialize in creating clean, efficient, and scalable solutions using HTML, CSS, JavaScript, and TypeScript. I have extensive experience with modern frontend frameworks and libraries like React.js, Next.js, and Redux.
+    </p>
 
-    <div className='border border-white rounded-lg grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 pl-5 py-4 textShadow'>
+    <p className='tracking-wide leading-relaxed mt-4 '>
+    With a solid foundation in Node.js, Express, MongoDB, and Mongoose, I enjoy working on full-stack applications, particularly with the MERN stack. I am constantly learning and applying the latest trends in web development to ensure top-tier user experiences.
+    </p>
+    <p className='tracking-wide leading-relaxed mt-4 '>
+    I love collaborating with teams, tackling complex problems, and turning ideas into seamless digital products.
+    </p>
+
+    <div className='border border-white rounded-lg grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 pl-5 py-4 textShadow'>
         <div>
             <h1>Name</h1>
             <p>Milon Ahmed Shuvo</p>
@@ -41,7 +51,7 @@ const About = () => {
 
         <div>
             <h1>Address</h1>
-            <p>Bogra,Bangladesh</p>
+            <p>Dhaka, Bangladesh</p>
         </div>
     </div>
 </div>
