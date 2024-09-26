@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
 import contact from '../../images/contact.jpg'
@@ -51,7 +51,7 @@ const Contact = () => {
             <textarea className="textarea textarea-info w-full my-2" name="message" placeholder="Textarea"></textarea>
            
             
-            <input className='bg-blue-100 px-2 w-full py-2 text-blue-500 font-bold rounded' type="submit" value="Send" />
+            <input className='bg-[#4E4CFF] px-2 w-full py-2 text-white font-bold rounded' type="submit" value="Send" />
     </form>  
     </div>
     </div>

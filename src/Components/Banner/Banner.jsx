@@ -13,29 +13,27 @@ const Banner = () => {
 
         <div className=' w-full flex flex-col justify-center'>
           <h1 className='text-6xl font-semibold '>Milon Ahmed <span>Shuvo</span></h1>
-          <h4 className='mt-5 text-3xl '>Frontend Developer</h4>
+          <h4 className='mt-5 text-2xl '>Frontend Developer with React & Next.js Expertise</h4>
 
-
-
-
+           
 
 
           <div className='flex items-center mt-8'>
 
-            {/* <button className="group mt-4 textShadow relative h-12 w-48 overflow-hidden rounded-lg bg-[#4E4CFF] text-lg font-bold shadow px-1">
+             <button className="group  textShadow relative h-12 w-48 overflow-hidden rounded-lg bg-[#4E4CFF] text-lg font-bold shadow px-1">
                         <a
                             href="https://drive.google.com/file/d/1arwbVVmXWauOkfOjFQ6wF0ngtcEXI7Gv/view?usp=sharing"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <div className="absolute inset-0 w-1 bg-secondary transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                            <div className="absolute inset-0 w-1 bg-purple-700 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
                             <span className="relative text-[#FFFFFF] group-hover:text-white">
                                 See Resume!
                             </span>
                         </a>
-                    </button> */}
+                    </button> 
 
-            <div>
+            {/* <div>
             <a href="https://drive.google.com/file/d/1arwbVVmXWauOkfOjFQ6wF0ngtcEXI7Gv/view?usp=sharing" 
            target="_blank"
             className="relative px-10 py-2 font-medium text-white group " rel="noreferrer">
@@ -54,17 +52,17 @@ const Banner = () => {
 
               <span className="relative text-md text-white">Resume</span>
             </a>
-            </div>
+            </div> */}
 
 
 
-            <div className='flex items-center  gap-3 ml-6'>
+            <div className='flex items-center  gap-2 ml-4'>
 
-              <div className='w-[40px] h-[40px] bg-[#4E4CFF] text-center flex justify-center items-center rounded-full '>
+              <div className='w-[40px] h-[40px] bg-[#4E4CFF] hover:bg-purple-700 text-center flex justify-center items-center rounded-full '>
                 <a className='' target="_blank" href="https://www.linkedin.com/in/milon-ahmed-shuvo-frontend" rel="noreferrer"> <FaLinkedin className="text-lg text-white "></FaLinkedin> </a>
               </div>
 
-              <div className='w-[40px] h-[40px] bg-[#4E4CFF] text-center flex justify-center items-center rounded-full '>
+              <div className='w-[40px] h-[40px] bg-[#4E4CFF] hover:bg-purple-700 text-center flex justify-center items-center rounded-full '>
                 <a className='' target="_blank" href="https://github.com/milonahmedshuvo" rel="noreferrer"> <FaGithub className="text-xl text-white"></FaGithub> </a>
               </div>
 

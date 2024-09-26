@@ -1,6 +1,4 @@
 import { useQuery } from '@tanstack/react-query'
-import React from 'react'
-import SingleProjects from '../../Projects/SingleProjects';
 import RouteSingle from './routeSingle';
 
 const Projects = () => {
@@ -8,7 +6,7 @@ const Projects = () => {
      const {data:projects=[], } = useQuery({
         queryKey: ['projects'],
         queryFn: async ( ) => {
-               const res = await fetch("https://my-personal-website-flax-beta.vercel.app/allProjects");
+               const res = await fetch("https://my-parsonal-website-server.vercel.app/allProjects");
                const data = await res.json()
                return data
         }
