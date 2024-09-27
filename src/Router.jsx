@@ -10,6 +10,7 @@ import Contact from "./Components/Contact/Contact";
 import Login from "./Layout/Login";
 import SingUp from "./Layout/SingUp";
 import ErrorPage from "./Layout/ErrorPage";
+import ProjectDatails from "./Components/Projects/ProjectDatails";
  
 export const router = createBrowserRouter([
     {
@@ -24,6 +25,11 @@ export const router = createBrowserRouter([
             {
                 path: '/projects',
                 element: <Projects></Projects>
+            },
+            {
+                path: '/projectsDatails/:id',
+                element: <ProjectDatails> </ProjectDatails>,
+                // loader: async ({params}) => fetch(`http://localhost:5000/project/${params.id}`)
             },
             {
                 path: "/about",

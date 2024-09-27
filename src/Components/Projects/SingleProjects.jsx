@@ -1,17 +1,20 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom"
+
 
 const SingleProjects = ({ project }) => {
 
   // eslint-disable-next-line react/prop-types
-  const {  title, image, clientLink, serverLink, liveLink, technology, } = project
+  const {  title, image, clientLink, serverLink, liveLink, technology, _id   } = project
 
 
 
 
 
   return (
+     <Link to={`/projectsDatails/${_id}`} >
     <div className='p-2 flex rounded-xl flex-col justify-between'>
 
 
@@ -24,11 +27,11 @@ const SingleProjects = ({ project }) => {
         />
       </div>
          
-         <p className="mt-3 ">Name : {title}</p>
+         <p className="mt-3 text-white ">Name : {title}</p>
 
       <div className='mt-2'>
         {
-          technology?.split(" ").map((el, i) => <span className='border border-white px-2  my-7 mx-1 rounded-lg '
+          technology?.split(" ").map((el, i) => <span className='border border-white text-white px-2  my-7 mx-1 rounded-lg '
             key={i}
           >{el} </span>)
         }
@@ -49,6 +52,7 @@ const SingleProjects = ({ project }) => {
 
 
     </div>
+    </Link>
   )
 }
 

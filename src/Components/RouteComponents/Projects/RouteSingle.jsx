@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const RouteSingle = ({ project }) => {
   const {
@@ -10,9 +12,13 @@ const RouteSingle = ({ project }) => {
     serverLink,
     liveLink,
     technology,
+    _id
   } = project;
 
+
+  
   return (
+    <Link to={`/projectsDatails/${_id}`} > 
     <div className='p-2 flex rounded-xl flex-col justify-between'>
 
 
@@ -50,6 +56,7 @@ const RouteSingle = ({ project }) => {
 
 
     </div>
+    </Link>
   );
 };
 
